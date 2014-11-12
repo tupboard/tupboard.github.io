@@ -3,15 +3,16 @@
 	src: url('mohave.otf');
 }
 
-body {
+html, body {
 	font-family: mohave;
 	background: #F5F3EE;
 	text-align: center;
 	color: #7D1935;
-}
-
-.noOverflow {
-	overflow-x: hidden;
+	width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
 }
 
 .navbar-default .navbar-nav li a:hover, .navbar-default .navbar-header:hover {
