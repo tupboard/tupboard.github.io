@@ -7,7 +7,7 @@ body {
 	font-family: mohave;
 	background: #F5F3EE;
 	text-align: center;
-	color: #7D1935;
+	color: #063e53;
 }
 
 .noOverflow {
@@ -15,12 +15,12 @@ body {
 }
 
 .navbar-default .navbar-nav li a, .navbar-default .navbar-header {
-	color: #7D1935;
+	color: #063e53;
 }
 
 .navbar-default .navbar-nav li a:hover, .navbar-default .navbar-header:hover {
-	color: #7D1935;
-	text-shadow: 2px 2px 1px #4A96AD;
+	color: #063e53;
+	text-shadow: 2px 2px 1px #e9bc18;
 }
 
 nav {
@@ -35,14 +35,14 @@ nav {
 
 .socc {
 	background-size: cover;
-	background-image: url("images/socc.png");
+	background-image: url("images/atdunkin.png");
 	background-repeat: no-repeat;
 	height: 680px;
 }
 
 .wball {
 	background-size: cover;
-	background-image: url("images/wball.png");
+	background-image: url("images/niehlson.png");
 	background-repeat: no-repeat;
 	height: 680px;
 }
@@ -53,7 +53,7 @@ nav {
 }
 
 h1 {
-	color: #4A96AD;
+	color: #e9bc18;
 }
 
 #Resources img {
