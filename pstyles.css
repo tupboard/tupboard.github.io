@@ -130,7 +130,7 @@ a:hover {
 	color: black;
 }
 
-.about .col-md-8 h1:hover {
+h1:hover {
 	cursor: pointer;
 	color: #6699cc;
 }
@@ -153,4 +153,10 @@ a:hover {
 
 .text2 {
 	padding-top: 12%;
+}
+
+.text1 {
+	padding-top: 8%;
+	font-size: 80px;
+	font-family: mohave;
 }

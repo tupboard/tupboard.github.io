@@ -14,22 +14,69 @@
     <script src="js/bootstrap.min.js"></script>
     <script>
     $(document).ready(function(){
-       $(".blurb").hover(function(){
+       $(".blurb").click(function(){
+            $(".text1").slideToggle('slow');
+            $(".text").slideToggle('slow');
+            $(".text2").hide();
+            $(".text3").hide();
+            $(".text4").hide();
+            $(".cal").slideToggle('slow');
+            $(".exec").slideToggle('slow');
+            $(".events").slideToggle('slow');
+            $(".blurb").toggleClass("blue");
+          });
+       $(".exec").click(function(){
+
+            $(".text1").slideToggle('slow');
+            $(".text2").slideToggle('slow');
+            $(".text").hide();
+            $(".text3").hide();
+            $(".text4").hide();
+            $(".blurb").slideToggle('slow');
+            $(".cal").slideToggle('slow');
+            $(".events").slideToggle('slow');
+            $(".exec").toggleClass("blue");
+       });
+       $(".cal").click(function(){
+            $(".text1").slideToggle('slow');
+            $(".text3").slideToggle('slow');
+            $(".text").hide();
+            $(".text2").hide();
+            $(".text4").hide();
+            $(".blurb").slideToggle('slow');
+            $(".exec").slideToggle('slow');
+            $(".events").slideToggle('slow');
+            $(".cal").toggleClass("blue");
+       });
+       $(".events").click(function(){
+            $(".text1").slideToggle('slow');
+            $(".text4").slideToggle('slow');
+            $(".text").hide();
+            $(".text2").hide();
+            $(".text3").hide();
+            $(".blurb").slideToggle('slow');
+            $(".exec").slideToggle('slow');
+            $(".cal").slideToggle('slow');
+            $(".events").toggleClass("blue");
+       });/*
+       $(".blurb").click(function(){
             $(".text").slideToggle('slow');
             $(".blurb").toggleClass("blue");
           });
-       $(".exec").hover(function(){
+       $(".exec").click(function(){
+        
             $(".text2").slideToggle('slow');
             $(".exec").toggleClass("blue");
        });
-       $(".cal").hover(function(){
+       $(".cal").click(function(){
             $(".text3").slideToggle('slow');
             $(".cal").toggleClass("blue");
        });
-       $(".events").hover(function(){
+       $(".events").click(function(){
             $(".text4").slideToggle('slow');
             $(".events").toggleClass("blue");
-       });
+       });*/
+
 
      });
     </script>
@@ -85,8 +132,9 @@
         <div class="col-md-8 info-section">
           <h3 class="text">"Programming Board is a student-run organization that promotes a strong sense of community at Tufts through campus-wide events, activities and social programming. Through its member groups, Programming Board plans both large- and small-scale events tailored to every Tufts student. These member groups include: <a href="fcc.html">Freshman Class Council</a>, <a href="socc.html">Sophomore Class Council</a>, <a href="index.html">Junior Class Council</a>, <a href="scc.html">Senior Class Council</a>, <a href="#">Concert Board</a>, <a href="#">Entertainment Board</a>, and <a href="tuftsfilmseries.com">Film Series.</a></br></br>The purpose of Programming Board is to promote a sense of community at Tufts by planning exciting, engaging and enjoyable events for the campus. Our goal is to find innovative and creative ways to unite students at Tufts.</h3>
           <div class="text2"><div class="col-md-4"><img src="images/emmy.png"/></br><h3>Emmy Ehrman</h3><h4>Co-chair</h4></div><div class="col-md-4"><img src="images/dan.png"/></br><h3>Daniel Madwed</h3><h4>Co-Chair</h4></div><div class="col-md-4"><img src="images/maddy.png"/></br><h3>Maddy Ball</h3><h4>Chair of Communications</h4></br></div></div>
-          <p class="text3"></p>
-          <p class="text4"></p>
+          <p class="text3"><iframe src="https://www.google.com/calendar/embed?src=6464u252n572k5dteqrb10rlao%40group.calendar.google.com&ctz=America/New_York" style="border: 10px solid #6699cc" height="420px" width="620px" frameborder="0" scrolling="no"></iframe></p>
+          <p class="text4"><iframe src="https://www.google.com/calendar/embed?src=6464u252n572k5dteqrb10rlao%40group.calendar.google.com&ctz=America/New_York" style="border: 10px solid #6699cc" height="420px" width="620px" frameborder="0" scrolling="no"></iframe></p>
+          <h3 class="text1">From Spring Fling to Winter Ball, we've got you covered.</h3>
         </div>
       </div></br></br>
 	</body>
