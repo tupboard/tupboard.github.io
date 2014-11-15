@@ -7,7 +7,7 @@ body {
 	font-family: mohave;
 	background: #F5F3EE;
 	text-align: center;
-	color: #063e53;
+	color: #000000;
 }
 
 .noOverflow {
@@ -19,7 +19,7 @@ body {
 }
 
 .navbar-default .navbar-nav li a:hover, .navbar-default .navbar-header:hover {
-	color: #063e53;
+	color: #000000;
 	text-shadow: 2px 2px 1px #6699cc;
 }
 
@@ -137,4 +137,20 @@ a:hover {
 
 .text, .text2, .text3, .text4 {
 	display: none;
+}
+
+.text2 img {
+	border: none;
+	border-radius: 50%;
+	height: 90%;
+	width: 90%;
+}
+
+.info-section {
+	padding-top: 7%;
+	padding-right: 10%;
+}
+
+.text2 {
+	padding-top: 12%;
 }
