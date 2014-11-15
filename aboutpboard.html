@@ -1,0 +1,117 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Tufts University Programming Board</title>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+    <link rel="stylesheet" href="css/scrolling-nav.css">
+    <script src="js/bootstrap.js"></script>
+    <script src="js/resizing.js"></script>
+    <script src="js/scrolling-nav.js"></script>
+    <link rel="stylesheet" href="pstyles.css">
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+    $(document).ready(function(){
+       $(".blurb").click(function(){
+            $(".text").slideToggle('slow');
+            $(".blurb").toggleClass("blue");
+          });
+       $(".exec").click(function(){
+            $(".text2").slideToggle('slow');
+            $(".exec").toggleClass("blue");
+       });
+       $(".cal").click(function(){
+            $(".text3").slideToggle('slow');
+            $(".cal").toggleClass("blue");
+       });
+       $(".events").click(function(){
+            $(".text4").slideToggle('slow');
+            $(".events").toggleClass("blue");
+       });
+
+     });
+    </script>
+	</head>
+	<body>
+    <!-- Navigation Bar -->
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand navbar-header page-scroll" href="pboard.html">Programming Board</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="#" class="navbar-header page-scroll about">About PBoard</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Councils <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="fcc.html">Freshman Class Council</a></li>
+            <li><a href="socc.html">Sophomore Class Council</a></li>
+            <li><a href="index.html">Junior Class Council</a></li>
+            <li><a href="scc.html">Senior Class Council</a></li>            
+          </ul></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Boards <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a>Concert Board</a></li>
+            <li><a>Entertainment Board</a></li>
+            <li><a href="http://tuftsfilmseries.com">Film Series</a></li>            
+          </ul></li></ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="https://www.facebook.com/TuftsJumbo" class="navbar-header" id="fb">Follow Us</a></li>
+        <li><a href="mailto:tupboard@gmail.com" class="navbar-header">Contact Us</a></li>
+      </ul>
+    </div>
+  </div>
+  </nav>
+  <!--End of nav bar -->
+  <!-- Tufts Landscape -->
+  <div class="noOverflow about">
+      <div class="row top"></br>
+        <div class="col-md-2"></div>
+        <div class="col-md-8"></br><img src="images/pboard.png"/></br></div>
+        <div class="col-md-2"></div>
+      </div>
+      <div class="row"></br>
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+          <h1 class="blurb blue">Vision and Mission</h1>
+          <h3 class="text">"Programming Board is a student-run organization that promotes a strong sense of community at Tufts through campus-wide events, activities and social programming. Through its member groups, Programming Board plans both large- and small-scale events tailored to every Tufts student. These member groups include: <a href="fcc.html">Freshman Class Council</a>, <a href="socc.html">Sophomore Class Council</a>, <a href="index.html">Junior Class Council</a>, <a href="scc.html">Senior Class Council</a>, <a href="#">Concert Board</a>, <a href="#">Entertainment Board</a>, and <a href="tuftsfilmseries.com">Film Series.</a></br></br>The purpose of Programming Board is to promote a sense of community at Tufts by planning exciting, engaging and enjoyable events for the campus. Our goal is to find innovative and creative ways to unite students at Tufts.</h3>
+        </div>
+        <div class="col-md-2"></div>
+      </div>
+      <div class="row"></br>
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+          <h1 class="exec blue">Executive Board</h1>
+          <p class="text2">Text</p>
+        </div>
+        <div class="col-md-2"></div>
+      </div>
+      <div class="row"></br>
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+          <h1 class="cal blue">Upcoming Events</h1>
+          <p class="text3">Text</p>
+        </div>
+        <div class="col-md-2"></div>
+      </div>
+      <div class="row"></br>
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+          <h1 class="events blue">Past Programs</h1>
+          <p class="text4">Text</p>
+        </div>
+        <div class="col-md-2"></div>
+      </div></br></br>
+	</body>
+</html>

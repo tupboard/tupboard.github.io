@@ -23,6 +23,10 @@ body {
 	text-shadow: 2px 2px 1px #6699cc;
 }
 
+.navbar-default .navbar-nav .about, .navbar-default .navbar-nav .about:hover {
+	color: #6699cc;
+}
+
 nav {
 	font-size: 18px;
 }
@@ -31,6 +35,7 @@ nav {
 	background-size: cover;
 	background-image: url("images/untitled.png");
 	background-repeat: no-repeat;
+	background-position: top center;
 }
 
 .sidebar-nav {
@@ -74,24 +79,62 @@ nav {
     left: -6px;
 }
 
-.left, .right {
+.left, .right, .b-right {
 	color: #fff;
 	font-size: 200%;
-	background: #6699cc;
 	padding: 10px;
-	top: 50%;
 	position: absolute;
 }
 
 .left:hover, .right:hover {
 	color: #6699cc;
-	background: #fff;
+	cursor: pointer;
 }
 
 .left {
 	left: 0%;
+	top: 50%;
 }
 
 .right {
 	right: 0%;
+	top: 50%;
+}
+
+.b-right {
+	bottom: 0%;
+	right: 0%;
+	margin: 0 auto;
+	background: none;
+	font-family: open sans;
+	text-shadow: 0px 0px 7px #6699cc;
+}
+
+.top {
+	margin-top: 70px;
+}
+
+h1, h3 a {
+	color: #6699cc;
+}
+
+h3 {
+	font-family: open sans;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+.blue {
+	color: black;
+}
+
+.about .col-md-8 h1:hover {
+	cursor: pointer;
+	color: #6699cc;
+}
+
+.text, .text2, .text3, .text4 {
+	display: none;
 }

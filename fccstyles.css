@@ -7,7 +7,7 @@ body {
 	font-family: mohave;
 	background: #F5F3EE;
 	text-align: center;
-	color: #3f2860;
+	color: #39b1c6;
 }
 
 .noOverflow {
@@ -15,12 +15,12 @@ body {
 }
 
 .navbar-default .navbar-nav li a, .navbar-default .navbar-header {
-	color: #3f2860;
+	color: #39b1c6;
 }
 
 .navbar-default .navbar-nav li a:hover, .navbar-default .navbar-header:hover {
-	color: #3f2860;
-	text-shadow: 2px 2px 1px #ec583a;
+	color: #39b1c6;
+	text-shadow: 2px 2px 1px #1fd26a;
 }
 
 nav {
@@ -35,18 +35,17 @@ nav {
 
 .socc {
 	background-size: cover;
-	background-image: url("images/fcc.png");
+	background-image: url("images/jumbo.png");
 	background-repeat: no-repeat;
 	height: 680px;
 }
 
 .wball {
 	background-size: cover;
-	background-image: url("images/tuftonias.png");
+	background-image: url("images/running.png");
 	background-repeat: no-repeat;
 	height: 680px;
 }
-
 
 #Juke, #Portfolio, #Resources {
 	padding-top: 100px;
@@ -54,7 +53,7 @@ nav {
 }
 
 h1 {
-	color: #ec583a;
+	color: #1fd26a;
 }
 
 #Resources img {

@@ -18,18 +18,39 @@
       $('.left').on('click',displayPreviousImage);
       $('.right').on('click',displayNextImage);
     });
+
 function displayNextImage() {
       x = (x === images.length - 1) ? 0 : x + 1;
     $(".landscape").fadeOut("1000", function() {
        $(".landscape").css("background-image", "url("+images[x]+")").fadeIn(1000);
-    }); 
+    if (x==0) {
+    $(".b-right").text("◦◘◦◦");
+    }
+    else if (x==1) {
+    $(".b-right").text("◦◦◘◦");
+  } else if (x==2) {
+    $(".b-right").text("◦◦◦◘");
+  } else if (x==3) {
+    $(".b-right").text("◘◦◦◦");
+  }
+    });
 }
 
 function displayPreviousImage() {
       x = (x <= 0) ? images.length - 1 : x - 1;
     $(".landscape").fadeOut("1000", function() {
        $(".landscape").css("background-image", "url("+images[x]+")").fadeIn(1000);
-    }); 
+    if (x==0) {
+    $(".b-right").text("◦◘◦◦");
+    }
+    else if (x==1) {
+    $(".b-right").text("◦◦◘◦");
+  } else if (x==2) {
+    $(".b-right").text("◦◦◦◘");
+  } else if (x==3) {
+    $(".b-right").text("◘◦◦◦");
+  }
+    });
 }
 
 function startTimer() {
@@ -37,12 +58,13 @@ function startTimer() {
 }
 
 var images = [], x = -1;
-images[0] = "images/socc.png";
-images[1] = "images/wball.png";
-images[2] = "images/untitled.png";
+images[0] = "images/jumbo.png";
+images[1] = "images/gala.png";
+images[2] = "images/retreat.png";
+images[3] = "images/untitled.png";
     </script>
 	</head>
-	<body onload = "startTimer()">
+	<body>
     <!-- Navigation Bar -->
   <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container-fluid">
@@ -58,11 +80,11 @@ images[2] = "images/untitled.png";
 
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li><a href="#" class="navbar-header page-scroll nav-one">About PBoard</a></li>
+        <li><a href="aboutpboard.html" class="navbar-header page-scroll nav-one">About PBoard</a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Councils <span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
-            <li><a>Freshman Class Council</a></li>
+            <li><a href="fcc.html">Freshman Class Council</a></li>
             <li><a href="socc.html">Sophomore Class Council</a></li>
             <li><a href="index.html">Junior Class Council</a></li>
             <li><a href="scc.html">Senior Class Council</a></li>            
@@ -84,7 +106,7 @@ images[2] = "images/untitled.png";
   <!--End of nav bar -->
   <!-- Tufts Landscape -->
   <div class="noOverflow">
-    <div class="landscape img-responsive resizable"><p class="left glyphicon glyphicon-chevron-left"></p><p class="right glyphicon glyphicon-chevron-right"</p></div>
+    <div class="landscape img-responsive resizable"><p class="left glyphicon glyphicon-chevron-left"></p><p class="right glyphicon glyphicon-chevron-right"</p><p class="b-right">◘◦◦◦</p></div>
   </div>
 	</body>
 </html>
