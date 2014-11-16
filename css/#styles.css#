@@ -1,0 +1,62 @@
+@font-face {
+	font-family: mohave;
+	src: url('mohave.otf');
+}
+
+html, body {
+	font-family: mohave;
+	background: #F5F3EE;
+	text-align: center;
+	color: #7D193
+}
+
+.navbar-default .navbar-nav li a:hover, .navbar-default .navbar-header:hover {
+	color: #4A96AD;
+}
+
+.landscape {
+	background-size: cover;
+	background-image: url("images/tufts.jpg");
+	background-repeat: no-repeat;
+	height: 680px;
+}
+
+.socc {
+	background-size: cover;
+	background-image: url("images/socc.png");
+	background-repeat: no-repeat;
+	height: 680px;
+}
+
+.wball {
+	background-size: cover;
+	background-image: url("images/wball.png");
+	background-repeat: no-repeat;
+	height: 680px;
+}
+
+#Juke, #Portfolio, #Resources {
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+h1 {
+	color: #4A96AD;
+}
+
+#Resources img {
+	opacity: 0.6;
+}
+
+#Resources img:hover {
+	opacity: 1;
+}
+
+#Juke img {
+	border: none;
+	border-radius: 100%;
+}
+
+h2, h3, h4 {
+	font-family: open sans;
+}
