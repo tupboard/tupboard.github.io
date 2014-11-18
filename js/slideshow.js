@@ -10,13 +10,17 @@ function displayNextImage() {
        $(".landscape").css("background-image", "url("+images[x]+")").fadeIn(1000);
     if (x==0) {
     $(".b-right").text("◦◘◦◦");
-    }
+    $(".b-left").text("What we do");
+  }
     else if (x==1) {
     $(".b-right").text("◦◦◘◦");
+    $(".b-left").text("Upcoming Events");
   } else if (x==2) {
     $(".b-right").text("◦◦◦◘");
+    $(".b-left").text("Get to know us!");
   } else if (x==3) {
     $(".b-right").text("◘◦◦◦");
+    $(".b-left").text("");
   }
     });
 }
@@ -27,13 +31,17 @@ function displayPreviousImage() {
        $(".landscape").css("background-image", "url("+images[x]+")").fadeIn(1000);
     if (x==0) {
     $(".b-right").text("◦◘◦◦");
+    $(".b-left").text("What we do");
     }
     else if (x==1) {
     $(".b-right").text("◦◦◘◦");
+    $(".b-left").text("Upcoming Events");
   } else if (x==2) {
     $(".b-right").text("◦◦◦◘");
+    $(".b-left").text("Get to know us!");
   } else if (x==3) {
     $(".b-right").text("◘◦◦◦");
+    $(".b-left").text("");
   }
     });
 }
