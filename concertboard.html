@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Tufts University Programming Board</title>
+    <title>Concert Board</title>
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/bootstrap-theme.css">
@@ -14,9 +14,9 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/slideshow.js"></script>
   </head>
-  <body>
+  <body onload="startTimer()">
     <!-- Navigation Bar -->
-  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -25,27 +25,25 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand navbar-header page-scroll" href="#">Programming Board</a>
+      <ul class="nav navbar-nav">
+      <li class="dropdown">
+        <a class="navbar-brand navbar-header page-scroll dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" href="#">Concert Board<span class="caret"></span></a>
+        <ul class="dropdown-menu" role="menu">
+            <li><a href="index.html">Programming Board</a></li>
+            <li><a href="fcc.html">Freshman Class Council</a></li>
+            <li><a href="socc.html">Sophomore Class Council</a></li>
+            <li><a href="juke.html">Junior Class Council</a></li>
+            <li><a href="scc.html">Senior Class Council</a></li>
+            <li><a href="entertainment.html">Entertainment Board</a></li>
+            <li><a href="filmseries.html">Film Series</a></li>               
+          </ul></li>
     </div>
 
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li><a href="aboutpboard.html" class="navbar-header page-scroll nav-one">About PBoard</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Councils <span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="fcc.html">Freshman Class Council</a></li>
-            <li><a href="socc.html">Sophomore Class Council</a></li>
-            <li><a href="juke.html">Junior Class Council</a></li>
-            <li><a href="scc.html">Senior Class Council</a></li>            
-          </ul></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Boards <span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="concertboard.html">Concert Board</a></li>
-            <li><a href="entertainment.html">Entertainment Board</a></li>
-            <li><a href="filmseries.html">Film Series</a></li>            
-          </ul></li></ul>
+        <li><a>About Us</a></li>
+        <li><a>Past Events</a></li>
+      </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="https://www.facebook.com/TuftsJumbo" class="navbar-header" id="fb">Follow Us</a></li>
         <li><a href="mailto:tupboard@gmail.com" class="navbar-header">Contact Us</a></li>
@@ -56,7 +54,14 @@
   <!--End of nav bar -->
   <!-- Tufts Landscape -->
   <div class="noOverflow">
-    <div class="landscape img-responsive resizable"><p class="left glyphicon glyphicon-chevron-left"></p><p class="right glyphicon glyphicon-chevron-right"</p><p class="b-left"></p><p class="b-right">◘◦◦◦</p></div>
+    <div class="concerts img-responsive resizable"></div>
+    <div id="Juke">
+      <h1>Past Events</h1></br>
+      <div class="row">
+        <div class="col-md-6"><iframe width="420" height="315" src="https://www.youtube.com/embed/-S6esMH_h9o"></iframe><h3>Spring Fling 2014</br></h3><p>Childish Gambino, Flossdramadus, The New Pornographers</p></br></div>
+        <div class="col-md-6"><iframe width="420" height="315" src="https://www.youtube.com/embed/cuE2oeqwwhk" allowFullScreen></iframe><h3>Cage Rage 2014</br></h3><p>MSMR, STRFKR, Gentleman Hall</p></br></div>
+      </div>
+    </div>
   </div>
   </body>
 </html>

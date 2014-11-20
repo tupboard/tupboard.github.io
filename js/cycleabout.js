@@ -3,7 +3,8 @@ images[0] = "images/fg.png";
 images[1] = "images/wb.png";
 images[2] = "images/tonias.png";
 images[3] = "images/sf.png";
-images[4] = "images/ww.png";
+images[4] = "images/kenan.png";
+images[5] = "images/ww.png";
 
 function displayNextImage() {
   if($(".cycles").is(":visible")) {

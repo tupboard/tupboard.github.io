@@ -38,6 +38,27 @@ nav {
 	background-position: top center;
 }
 
+.concerts {
+	background-size: cover;
+	background-image: url("../images/cboard.png");
+	background-repeat: no-repeat;
+	background-position: top center;
+}
+
+.entertainment {
+	background-size: cover;
+	background-image: url("../images/eboard.png");
+	background-repeat: no-repeat;
+	background-position: top center;
+}
+
+.film {
+	background-size: cover;
+	background-image: url("../images/filmseries.png");
+	background-repeat: no-repeat;
+	background-position: top center;
+}
+
 .cycles {
 	background-size: contain;
 	background-position: right center;
