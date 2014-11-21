@@ -158,7 +158,7 @@ h1, h3 a {
 	color: #6699cc;
 }
 
-h3 {
+h3, p {
 	font-family: open sans, calibri;
 }
 
@@ -221,4 +221,18 @@ h1:hover {
 
 #Juke {
 	padding-bottom: 150px;
+}
+
+.cochairs img {
+	border: none;
+	border-radius: 50%;
+	width: 60%;
+}
+
+.cochairs h2, .cochairs p {
+	font-family: open sans, calibri;
+}
+
+.fb {
+	background-image: url("../images/insta.png");
 }
