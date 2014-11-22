@@ -3,7 +3,7 @@
       $('.left').on('click',displayPreviousImage);
       $('.right').on('click',displayNextImage);
       $('.b-left').on('click', function() {
-        window.location = "tupboard.github.io/aboutpboard.html";
+        window.location = "http://tupboard.github.io/aboutpboard.html";
       });
     });
 
