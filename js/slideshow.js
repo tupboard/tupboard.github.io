@@ -2,6 +2,9 @@
       $('.dropdown-toggle').dropdown();
       $('.left').on('click',displayPreviousImage);
       $('.right').on('click',displayNextImage);
+      $('.b-left').on('click', function() {
+        window.location = "aboutpboard.html";
+      });
     });
 
 function displayImage() {

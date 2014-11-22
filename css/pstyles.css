@@ -148,6 +148,7 @@ nav {
 	background: none;
 	font-family: open sans, calibri;
 	text-shadow: 0px 0px 7px #6699cc;
+	cursor: pointer;
 }
 
 .top {
