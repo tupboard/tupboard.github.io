@@ -19,9 +19,12 @@ $(window).resize(function() {
 
     $(document).ready(function() {
    var windowHeight = $(window).height();
-   var $imageWrapper = $('.resizable');
-   $imageWrapper.height( windowHeight );
+   var windowWidth = $(window).width();
    var percentage = windowHeight / 768;
+   var percent2 = windowWidth / 1024;
+   if (percentage > percent2) {
+    percentage = percent2;
+   }
 
    var newsize = $("h1").css("font-size");
    newsize = newsize.replace('px','');
@@ -34,7 +37,7 @@ $(window).resize(function() {
    newsize = Math.floor(newsize*percentage);
    newsize = newsize+"px";
    $("h2").css("font-size", newsize);
-   
+
    newsize = $("h3").css("font-size");
    newsize = newsize.replace('px','');
    newsize = Math.floor(newsize*percentage);
