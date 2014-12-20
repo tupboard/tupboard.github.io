@@ -58,6 +58,7 @@ h1 {
 
 #Resources img {
 	opacity: 0.6;
+	width: 60%;
 }
 
 #Resources img:hover {

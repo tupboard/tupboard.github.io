@@ -1,3 +1,9 @@
+var refreshIntervalId;
+
+$(document).ready(function startTimer() {
+      refreshIntervalId = setInterval(displayNextImage, 6000);
+});
+
     $(document).ready(function() {
       $('.dropdown-toggle').dropdown();
       $('.left').on('click',displayPreviousImage);
@@ -20,6 +26,7 @@ function displayImage() {
      });}
 
 function displayNextImage() {
+  clearInterval(refreshIntervalId);
       x = (x === images.length - 1) ? 0 : x + 1;
     $(".landscape").fadeOut("1000", function() {
        $(".landscape").css("background-image", "url("+images[x]+")").fadeIn(1000);
@@ -37,6 +44,7 @@ function displayNextImage() {
 }
 
 function displayPreviousImage() {
+  clearInterval(refreshIntervalId);
       x = (x <= 0) ? images.length - 1 : x - 1;
     $(".landscape").fadeOut("1000", function() {
        $(".landscape").css("background-image", "url("+images[x]+")").fadeIn(1000);
@@ -55,10 +63,6 @@ function displayPreviousImage() {
     $(".concerts").fadeOut("1000", function() {
        $(".concerts").css("background-image", "url("+imgs[x]+")").fadeIn(1000);
      });
-}
-
-function startTimer() {
-      setInterval(displayImage, 6000);
 }
 
 var images = [], x = -1;
