@@ -34,6 +34,7 @@ $(window).resize(function() {
    newsize = Math.floor(newsize*percentage);
    newsize = newsize+"px";
    $("h2").css("font-size", newsize);
+   
    newsize = $("h3").css("font-size");
    newsize = newsize.replace('px','');
    newsize = Math.floor(newsize*percentage);
