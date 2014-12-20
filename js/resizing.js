@@ -22,9 +22,11 @@ $(window).resize(function() {
    var windowWidth = $(window).width();
    var percentage = windowHeight / 768;
    var percent2 = windowWidth / 1024;
+   console.log(windowHeight+" "+windowWidth+" "+percentage+" "+percent2+" ");
    if (percentage > percent2) {
     percentage = percent2;
    }
+   console.log(percentage);
 
    var newsize = $("h1").css("font-size");
    newsize = newsize.replace('px','');
