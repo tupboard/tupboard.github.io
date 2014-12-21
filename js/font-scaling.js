@@ -20,7 +20,7 @@ var isMobile = {
 };
 
 $(document).ready(function() {
-if (!isMobile) {
+if (!isMobile.any()) {
    var windowHeight = $(window).height();
    var percentage = windowHeight / 680;
 
