@@ -67,7 +67,7 @@ function displayPreviousImage() {
 
 var images = [], x = -1;
 images[0] = "images/jumbo.png";
-images[1] = "images/gala.png";
+images[1] = "images/niehlson.png";
 images[2] = "images/retreat.png";
 images[3] = "images/untitled.png";
 
