@@ -3,16 +3,19 @@ $(document).ready(function startTimer() {
 });
 
 function displayImage() {
-        x = (x === imgs.length - 1) ? 0 : x + 1;
-      $(".concerts").fadeOut("1000", function() {
-       $(".concerts").css("background-image", "url("+imgs[x]+")").fadeIn(1000);
-     });
-      $(".entertainment").fadeOut("1000", function() {
-       $(".entertainment").css("background-image", "url("+pics[x]+")").fadeIn(1000);
-     });
-      $(".film").fadeOut("1000", function() {
-       $(".film").css("background-image", "url("+pix[x]+")").fadeIn(1000);
-     });}
+  x = (x === imgs.length - 1) ? 0 : x + 1;
+  $(".concerts").fadeOut("1000", function() {
+    $(".concerts").css("background-image", "url("+imgs[x]+")").fadeIn(1000);
+  });
+  
+  $(".entertainment").fadeOut("1000", function() {
+    $(".entertainment").css("background-image", "url("+pics[x]+")").fadeIn(1000);
+  });
+
+  $(".film").fadeOut("1000", function() {
+    $(".film").css("background-image", "url("+pix[x]+")").fadeIn(1000);
+  });
+}
 
 var imgs = [], x = -1;
 imgs[0] = "images/msmr.png";

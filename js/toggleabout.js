@@ -18,8 +18,8 @@
                 $(".blurb").text("Vision and Mission");
             }
           });
-       $(".exec").click(function(){
 
+       $(".exec").click(function(){
             $(".text1").slideToggle('slow');
             $(".text2").slideToggle('slow');
             $(".text").hide();
@@ -38,6 +38,7 @@
                 $(".exec").text("Executive Board");
             }
        });
+
        $(".cal").click(function(){
             $(".text1").slideToggle('slow');
             $(".text3").slideToggle('slow');
@@ -57,6 +58,7 @@
                 $(".cal").text("Upcoming Events");
             }
        });
+       
        $(".events").click(function(){
             $(".text1").slideToggle('slow');
             $(".text4").slideToggle('slow');
