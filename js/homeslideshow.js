@@ -1,5 +1,5 @@
 var refreshIntervalId;
-var subtitle = ["From Fall Gala", "From Fall Gala to Spring Fling,", "From Fall Gala to Spring Fling,</br> We've Got You Covered."];
+var subtitle = ["From Fall Gala,", "From Fall Gala, to Spring Fling,", "From Fall Gala to Spring Fling,</br> We've Got You Covered."];
 var i = 0;
 var count = 0;
 var textloop, refreshIntervalId;
