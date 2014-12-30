@@ -10,7 +10,7 @@ function loop() {
   if (i <= subtitle[count].length) {
     substring = subtitle[count].substr(0, i);
     $(".hometext").html(substring);
-    if (i==31) {
+    if (i==32) {
       i=i+4;
     }
     i=i+1;
