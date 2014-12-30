@@ -110,7 +110,7 @@ nav {
     left: -6px;
 }
 
-.left, .right, .b-right, .b-left {
+.left, .right, .b-left {
 	color: #fff;
 	font-size: 200%;
 	padding: 10px;
@@ -125,20 +125,24 @@ nav {
 .left {
 	left: 0%;
 	top: 50%;
+	visibility: hidden;
 }
 
 .right {
 	right: 0%;
 	top: 50%;
+	visibility: hidden;
 }
 
-.b-right {
-	bottom: 0%;
-	right: 0%;
-	margin: 0 auto;
+.hometext {
+  	margin: auto;
+  	position: absolute;
+  	top: 20%; left: 0; right: 0;
 	background: none;
 	font-family: open sans, calibri;
-	text-shadow: 0px 0px 7px #6699cc;
+	color: white;
+	text-shadow: 0px 0px 7px black;
+	font-size: 50px;
 }
 
 .b-left {
