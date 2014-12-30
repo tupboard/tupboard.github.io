@@ -6,7 +6,7 @@ var textloop, refreshIntervalId;
 
 function loop() {
   clearInterval(textloop);
-  textloop = setInterval(loop, 200);
+  textloop = setInterval(loop, 125);
   if (i <= subtitle[count].length) {
     substring = subtitle[count].substr(0, i);
     $(".hometext").html(substring);
@@ -30,7 +30,7 @@ function loop() {
 
 function theTimer() {
     clearInterval(refreshIntervalId);
-    textloop = setInterval(loop, 800);
+    textloop = setInterval(loop, 100);
 }
 
 function endCycle() {
