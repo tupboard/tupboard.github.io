@@ -19,8 +19,8 @@ function loop() {
     clearInterval(textloop);
     count++;
     if (count < 3) {
-        delayedEntry = setInterval(displayNextImage, 1800);
-        refreshIntervalId = setInterval(theTimer, 2100);
+        delayedEntry = setInterval(displayNextImage, 1500);
+        refreshIntervalId = setInterval(theTimer, 1700);
     }
     if (count == 3) {
       delayedEntry = setInterval(displayNextImage, 2200);
