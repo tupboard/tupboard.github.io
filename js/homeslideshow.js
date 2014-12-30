@@ -1,5 +1,5 @@
 var refreshIntervalId;
-var subtitle = ["From Fall Gala,", "From Fall Gala, to Spring Fling,", "From Fall Gala to Spring Fling,</br> We've Got You Covered."];
+var subtitle = ["From Fall Gala,", "From Fall Gala, to Spring Fling,", "From Fall Gala, to Spring Fling,</br> We've Got You Covered."];
 var i = 0;
 var count = 0;
 var textloop, refreshIntervalId;
@@ -19,11 +19,11 @@ function loop() {
     clearInterval(textloop);
     count++;
     if (count < 3) {
-        delayedEntry = setInterval(displayNextImage, 2000);
-        refreshIntervalId = setInterval(theTimer, 2200);
+        delayedEntry = setInterval(displayNextImage, 1800);
+        refreshIntervalId = setInterval(theTimer, 2100);
     }
     if (count == 3) {
-      delayedEntry = setInterval(displayNextImage, 2500);
+      delayedEntry = setInterval(displayNextImage, 2200);
     }
   }
 }
