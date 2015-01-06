@@ -60,8 +60,18 @@ function displayNextImage() {
     });
 }
 
+$(document).ready(function() {
+  $("#owl-demo").owlCarousel({
+      navigation : true,
+      slideSpeed : 300,
+      paginationSpeed : 400,
+      singleItem:true
+  });
+});
+
 function displayPreviousImage() {
   clearInterval(refreshIntervalId);
+    $(".hometext").text("");
       x = (x <= 0) ? images.length - 1 : x - 1;
     $(".landscape").fadeOut("1000", function() {
        $(".landscape").css("background-image", "url("+images[x]+")").fadeIn(1000);

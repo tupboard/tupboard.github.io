@@ -1,10 +1,5 @@
-@font-face {
-	font-family: mohave;
-	src: url('../Mohave.otf');
-}
-
 body {
-	font-family: mohave, Fjalla One;
+	font-family: Voltaire;
 	background: #F5F3EE;
 	text-align: center;
 	color: #7D1935;
