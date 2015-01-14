@@ -74,3 +74,4 @@ images[0] = "images/fling.png";
 images[1] = "images/retreat.png";
 images[2] = "images/welcome.png";
 images[3] = "images/untitled.png";
+images[4] = "images/gala.png";
