@@ -1,5 +1,3 @@
-$(document).ready(function(){
-
 	$(window).scroll(function() {
    var hT = $('.landscape').offset().top,
        hH = $('.landscape').outerHeight(),
@@ -35,5 +33,4 @@ $(document).ready(function(){
    } else {
        $(".nav-three").css("color",$("body").css("color"));
  }
-});
 });
